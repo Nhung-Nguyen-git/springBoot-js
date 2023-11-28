@@ -3,8 +3,15 @@
 // Đặt màu văn bản thành #777
 // Đặt kích thước phông chữ thành 2rem
 // Đặt nội dung HTML thành Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.
+
+let createText = document.createElement("p");
+createText.id = "text";
+createText.textContent ="Tôi có thể làm ";
+document.body.appendChild(createText);
 const text = document.getElementById("text");
-text.innerHTML= 'Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.';
+console.log(text)
+
+// text.innerHTML= 'Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.';
 
 
 // Câu 2. Sử dụng vòng lặp để đặt màu chữ cho tất cả thẻ li thành màu blue (tạo thẻ ul-li bằng html)
